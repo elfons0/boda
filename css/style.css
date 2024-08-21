@@ -1,0 +1,38 @@
+.bg-anillos {
+  background-image: url(../img/ro-novio.gif), url(../img/ro-novia.gif);
+  background-position: right;
+}
+
+.clock {
+  width: 650px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+mark {
+    --color1: lightskyblue;
+    --color2: lightskyblue;
+    --bg-height: 30%;
+      
+    all: unset;
+    background-image: linear-gradient(var(--color1), var(--color2));
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 var(--bg-height);
+    animation: highlight 800ms 1 ease-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
+  
+  
+  @keyframes highlight {
+    to {
+      background-size: 100% var(--bg-height);
+    }
+  }
+
+.icon{
+    width: 10vw;
+}
