@@ -1,6 +1,12 @@
-.bg-anillos {
+.bg-novios {
   background-image: url(../img/ro-novio.gif), url(../img/ro-novia.gif);
   background-position: right;
+}
+
+.bg-marco {
+  background-image: url(../img/marco.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw auto;
 }
 
 .clock {
@@ -24,6 +30,7 @@ mark {
     animation: highlight 800ms 1 ease-out;
     animation-fill-mode: forwards;
     animation-play-state: paused;
+    font-weight: bold;
   }
   
   
@@ -35,4 +42,15 @@ mark {
 
 .icon{
     width: 10vw;
+}
+
+.left-mini-list{
+  display: inline-block; 
+  text-align: left;
+}
+
+@media screen and (max-width: 400px) {
+  .left-mini-list{
+    font-size: 0.8em;
+  }
 }
