@@ -123,7 +123,6 @@ a:focus-visible {
   grid-row-gap: 1rem;
   grid-column-gap: 2rem;
   justify-items: start;
-  text-transform: uppercase;
   font-size: 12px;
 }
 
@@ -337,7 +336,7 @@ i {
 }
 
 .content__img--large {
-  width: 60%;
+  width: 100%;
   height: auto;
 }
 
@@ -364,14 +363,14 @@ i {
 
 .content__text {
   margin: 0;
-  max-width: 90wv;
+  max-width: 900px;
   grid-area: content-text;
   text-align: center;
   line-height: 1.5;
   padding: 2rem;
   backface-visibility: hidden;
   background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 0 0 2rem 2rem;
+  border-radius: 1rem;
 
   box-shadow: 0px 5px 6px 1px #333;
 }
@@ -379,6 +378,11 @@ i {
 .content__text--narrow {
   max-width: 300px;
 }
+
+.content--heading {
+	width: 100vw;
+	height: 900px;
+  }
 
 .content--intro {
   padding-top: 25vh;
@@ -389,6 +393,7 @@ i {
 .content--outro {
   padding-top: 5vh;
   padding-bottom: 30vh;
+  background-color: lightskyblue;
 }
 
 .sticky-bg {
@@ -398,19 +403,19 @@ i {
 }
 
 .bg-1 {
-  background-image: url(../img/atardecer.jpg);
+  background-image: url(../img/atardecer1.jpg);
 }
 .bg-2 {
-  background-image: url(../img/parador.jpg);
+  background-image: url(../img/roque.jpg);
 }
 .bg-3 {
-  background-color: var(--color-bg-3);
+  background-image: url(../img/parador.jpg);
 }
 .bg-4 {
   background-color: var(--color-bg-4);
 }
 .bg-5 {
-	background-image: url(../img/japon.jpg);
+	background-image: url(../img/pagoda.webp);
 }
 .bg-6 {
   background-color: var(--color-bg-6);

@@ -1,3 +1,21 @@
+@font-face {
+  font-family: allembert;
+  src: url(../font/allembert_ufonts.com_.ttf);
+}
+
+@font-face {
+  font-family: josefsophia;
+  src: url(../font/josephsophia.ttf);
+}
+
+.lovefont{
+  font-family: josefsophia;
+}
+
+.content__title{
+  font-family: allembert;
+}
+
 .bg-novios {
   background-image: url(../img/ro-novio.gif), url(../img/ro-novia.gif);
   background-position: right;
@@ -7,6 +25,14 @@
   background-image: url(../img/marco.jpg);
   background-repeat: no-repeat;
   background-size: 100vw auto;
+  font-size: 0.95em;
+}
+
+.bg-cabecera {
+  background-image: url(../img/cabecera.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 900px 900px;
 }
 
 .clock {
@@ -49,8 +75,34 @@ mark {
   text-align: left;
 }
 
+.blue-border{
+  border-color: lightskyblue;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.map{
+  display: block;
+}
+
+.map-mini{
+  display: none;
+}
+
 @media screen and (max-width: 400px) {
   .left-mini-list{
     font-size: 0.8em;
+  }
+
+  .bg-cabecera {
+    background-size: 450px 450px;
+  }
+
+  .map-mini{
+    display: block;
+  }
+  
+  .map{
+    display: none;
   }
 }
