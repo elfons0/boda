@@ -120,6 +120,7 @@ a:focus-visible {
   display: grid;
   z-index: 1000;
   width: 100%;
+  max-width: 900px;
   grid-row-gap: 1rem;
   grid-column-gap: 2rem;
   justify-items: start;
@@ -132,7 +133,7 @@ a:focus-visible {
   background-size: auto 80%;
   background-position: 120% 50%;
   background-repeat: no-repeat;
-  grid-template-areas: "title" "quick1" "quick2" "quick3" "quick4" "quick5" "quick6" "heading";
+  grid-template-areas: "title" "quick1" "quick2" "quick3" "quick4" "quick5" "quick6";
 }
 
 .frame--footer {
@@ -385,8 +386,8 @@ i {
   }
 
 .content--intro {
-  padding-top: 25vh;
-  padding-bottom: 25vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   z-index: 2;
 }
 

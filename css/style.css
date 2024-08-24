@@ -8,8 +8,26 @@
   src: url(../font/josephsophia.ttf);
 }
 
-.lovefont{
+.love-font{
   font-family: josefsophia;
+  font-size: min(10vw, 5.5em);
+  margin-top: 0;
+}
+
+.love-heading{
+  width: 100vw;
+  height: 100vw;
+  max-width: 900px;
+  max-height: 900px;
+
+  background-image: url(../img/marco.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: contain;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content__title{
@@ -19,20 +37,6 @@
 .bg-novios {
   background-image: url(../img/ro-novio.gif), url(../img/ro-novia.gif);
   background-position: right;
-}
-
-.bg-marco {
-  background-image: url(../img/marco.jpg);
-  background-repeat: no-repeat;
-  background-size: 100vw auto;
-  font-size: 0.95em;
-}
-
-.bg-cabecera {
-  background-image: url(../img/cabecera.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 900px 900px;
 }
 
 .clock {
