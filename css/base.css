@@ -298,24 +298,49 @@ i {
 .content--card {
   display: flex;
   flex-direction: column;
-  height: 80vh;
-  width: 95vw;
-  max-width: 500px;
-  aspect-ratio: 0.8;
+  align-content: center;
+  width: 85vw;
+  max-width: 900px;
   top: 10vh;
   margin: auto;
-  border-radius: 14px;
-  gap: 3vh;
   text-align: center;
-  margin-bottom: 5vh;
+  padding: var(--page-padding);
+  border: 1px solid #023d72;
+  margin-top: 5vh;
+  background-color: white;
+  background-repeat: repeat-y;
+}
+
+.content--card-left{
+  background-position: right;
+  padding-right: calc(30px + var(--page-padding));
+  background-image: url(../img/bandera.png);
+}
+
+.content--card-right{
+  background-position: left;
+  padding-left: calc(30px + var(--page-padding));
+  background-image: url(../img/bandera-reves.png);
 }
 
 .content--card .content__title {
   font-size: clamp(1.5rem, 4vw, 3.5rem);
+  text-shadow: none;
+  color: #023d72;
 }
 
 .content--card .content__title i {
   display: block;
+}
+
+.content--card p {
+  text-align: justify;
+}
+
+.content--card img {
+  max-width: none;
+  border: 1px solid #005299;
+  border-radius: 1em;
 }
 
 .content--half {
