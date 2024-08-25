@@ -8,6 +8,16 @@
   src: url(../font/josephsophia.ttf);
 }
 
+@font-face {
+  font-family: Peristiwa;
+  src: url(../font/Peristiwa.otf);
+}
+
+@font-face {
+  font-family: Andaray;
+  src: url(../font/Andaray.otf);
+}
+
 .love-font{
   font-family: josefsophia;
   font-size: min(10vw, 5.5em);
@@ -28,10 +38,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin-top: max(-20%, -275px);
 }
 
 .content__title{
-  font-family: allembert;
+  font-family: Peristiwa;
+
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: white;
+}
+
+.content--intro p{
+  font-family:  Peristiwa;
 }
 
 .bg-novios {
