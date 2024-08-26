@@ -8,16 +8,10 @@
   <!-- normalize -->
   <link href="css/normalize.css" rel="stylesheet" />
 
-  <!-- bootstrap 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    -->
-
   <!-- style -->
   <link href="css/base.css" rel="stylesheet" type="text/css" />
   <link href="css/countdown.css" rel="stylesheet" type="text/css" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
-
   <script>
     document.documentElement.className = "js";
   </script>
@@ -31,8 +25,8 @@
         <a class="frame__quick1" href="#ceremonia">La Ceremonia</a>
         <a class="frame__quick1" href="#sitio">Cómo llegar</a>
         <a class="frame__quick3" href="#alojamiento">Alojamiento</a>
-        <a class="frame__quick5" href="#lunamiel">La Luna de Miel</a>
-        <a class="frame__quick6" href="#asistencia">Te esperamos</a>
+        <a class="frame__quick4" href="#lunamiel">La Luna de Miel</a>
+        <a class="frame__quick5" href="#asistencia">Acompáñanos</a>
       </div>
     </header>
     <div class="content">
@@ -41,7 +35,7 @@
       </div>
     </div>
     <div class="content content--highlight content--intro">
-      <p class="text-large">Te esperamos</p>
+      <p class="text-large">Te esperamos a las 13:00 del día</p>
       <div class="holder">
         <div class="new-year"></div>
       </div>
@@ -101,21 +95,7 @@
           </p>
         </div>
       </div>
-      <div class="content content--sticky content--grid sticky-bg bg-4">
-        <img class="content__img content__img--large content__img--left" src="img/10.png" />
-        <h2 class="content__title"><i>The</i> Wasteland</h2>
-        <p class="content__text content__text--left text-meta">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          eu fringilla dui. Aliquam ut malesuada arcu. Duis et tempor augue.
-          Duis hendrerit erat vitae leo finibus, ac fringilla felis placerat.
-          Quisque eleifend tellus eget neque imperdiet, ac pulvinar ligula
-          facilisis. Fusce urna quam, bibendum id diam vel, condimentum
-          volutpat neque. Nam accumsan turpis ac tempor vehicula. Donec
-          faucibus, magna ac egestas vestibulum, magna augue laoreet augue, ut
-          mollis odio eros ac risus.
-        </p>
-      </div>
-      <div class="content content--sticky content--grid sticky-bg bg-5" id="lunamiel">
+      <div class="content content--sticky content--grid sticky-bg bg-4" id="lunamiel">
         <img class="content__img" src="img/pikachu.png" />
         <h2 class="content__title">La Luna de Miel</h2>
         <div class="content__text content__text--left text-meta">
@@ -136,11 +116,68 @@
           </p>
         </div>
       </div>
-      <div class="content content--sticky content--grid sticky-bg bg-6" id="asistencia">
-        <h2 class="content__title">Te esperamos</h2>
-        <p class="content__text content__text--left text-meta">
-          Confirmanos tu asistencia rellenando este formulario:
-        </p>
+      <div class="content content--sticky content--grid sticky-bg bg-5" id="asistencia">
+        <h2 class="content__title">Acompáñanos</h2>
+        <div class="content__text content__text--left text-meta">
+          <p>
+            ¿Contamos contigo? Confirmanos tu asistencia rellenando este formulario:
+          </p>
+          <form id="myForm">
+            <fieldset class="form-elements blue-border round-corner">
+              <p>
+                <label for="Nombre">Nombre completo</label>
+                <input id="Nombre" name="Nombre" />
+              </p>
+              <p>
+                <label for="Compa">¿Llevas acompañante?</label>
+                <select id="Compa">
+                  <option value="" selected>No, voy solo</option>
+                  <option value="yes">Sí, llevo acompañante</option>
+                </select>
+              </p>
+              <p id="ver-pareja" class="oculto">
+                <label for="Pareja">Dinos su nombre completo</label>
+                <input id="Pareja" name="Pareja" />
+              </p>
+              <p>
+                <label for="Alojamiento">¿Te quedas esa noche?</label>
+                <select id="Alojamiento" name="Alojamiento">
+                  <option value="" disabled selected></option>
+                  <option value="SI">Sí, nos quedaremos en el parador</option>
+                  <option value="NO">No, muchas gracias</option>
+                </select>
+              </p>
+              <p>
+                <label for="Menu">¿Que prefieres de plato principal?</label>
+                <select id="Menu" name="Menu">
+                  <option value="" disabled selected></option>
+                  <option value="carne">Prefiero la carne</option>
+                  <option value="pescado">Prefiero el pescado</option>
+                  <option value="vegetariano">Prefiero vegetariano</option>
+                </select>
+              </p>
+              <p id="ver-menu-pareja" class="oculto">
+                <label for="Menu2">¿Y tu acompañante?</label>
+                <select id="Menu2" name="Menu2">
+                  <option value="" disabled selected></option>
+                  <option value="carne">Prefiere la carne</option>
+                  <option value="pescado">Prefiere el pescado</option>
+                  <option value="vegetariano">Prefiere vegetariano</option>
+                </select>
+              </p>
+              <p>
+                <label for="Alergias">¿Alguna alergia o intolerancia?</label>
+                <input id="Alergias" name="Alergias" />
+              </p>
+            </fieldset>
+              <button id="sendForm" class="blue-button">Enviar</button>
+          </form>
+          <div id="enviado" class="oculto">
+            <p id="msg"></p>
+            <button id="volver" class="blue-button">Volver</button>
+          </div>
+        </div>
+        <script src="js/gsheet.js"></script>
       </div>
     </div>
     <div class="content content--highlight content--outro">
@@ -360,9 +397,12 @@
           del casco histórico y admira la arquitectura tradicional canaria.
         </p>
         <p>
-          La Aldea es un paraíso para los amantes de la naturaleza. Recorre el impresionante <mark>Andén Verde</mark> con sus vistas
-          panorámicas, explora el <mark>Barranco de Tocodomán</mark> o relájate en la <mark>Playa de La Aldea</mark>. ¡Y no te pierdas la
-          oportunidad de visitar el <mark>Túmulo Funerario del Lomo de Caserones</mark> y descubrir los secretos de sus antiguos
+          La Aldea es un paraíso para los amantes de la naturaleza. Recorre el impresionante <mark>Andén Verde</mark>
+          con sus vistas
+          panorámicas, explora el <mark>Barranco de Tocodomán</mark> o relájate en la <mark>Playa de La Aldea</mark>. ¡Y
+          no te pierdas la
+          oportunidad de visitar el <mark>Túmulo Funerario del Lomo de Caserones</mark> y descubrir los secretos de sus
+          antiguos
           pobladores!
         </p>
       </div>

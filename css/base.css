@@ -8,7 +8,7 @@
   font-size: 16px;
   --page-padding: 1.5rem;
 
-  --color-text: #000;
+  --color-text: #023d72;
   --color-bg: white; /*#e1e1e1*/
   --color-link: #023d72;
   --color-link-hover: #005299;
@@ -121,10 +121,9 @@ a:focus-visible {
   z-index: 1000;
   width: 100%;
   max-width: 900px;
-  grid-row-gap: 1rem;
-  grid-column-gap: 2rem;
+  grid-row-gap: 12px;
   justify-items: start;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .frame--header {
@@ -153,55 +152,6 @@ a:focus-visible {
   grid-area: title;
   font-size: 1rem;
   margin: 0;
-}
-
-.frame__back {
-  grid-area: back;
-  justify-self: start;
-}
-
-.frame__prev {
-  grid-area: prev;
-  justify-self: start;
-}
-
-.frame__sub {
-  grid-area: sub;
-}
-
-.frame__demos {
-  grid-area: demos;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  align-self: start;
-  flex-wrap: wrap;
-  background: var(--color-bg);
-  border: 1px solid;
-  padding: 1rem;
-  border-radius: 10px;
-}
-
-.frame__demos > * {
-  width: 2rem;
-  display: block;
-  flex: none;
-  text-decoration: none;
-  border-radius: 50%;
-  aspect-ratio: 1;
-  border: 1px solid var(--color-link-hover);
-  display: grid;
-  place-items: center;
-  padding-top: 0.2em;
-  background: var(--color-bg);
-}
-
-.frame__demos > span {
-  filter: invert(100%);
-}
-
-.frame__demos::before {
-  content: "Variations:";
 }
 
 .frame__heading {
@@ -416,7 +366,7 @@ i {
 
 .content--outro {
   padding-top: 5vh;
-  padding-bottom: 30vh;
+  padding-bottom: 5vh;
   background-color: lightskyblue;
 }
 
@@ -436,13 +386,10 @@ i {
   background-image: url(../img/parador.jpg);
 }
 .bg-4 {
-  background-color: var(--color-bg-4);
-}
-.bg-5 {
 	background-image: url(../img/pagoda.webp);
 }
-.bg-6 {
-  background-color: var(--color-bg-6);
+.bg-5 {
+  background-image: url(../img/banquete.jpg);
 }
 
 
