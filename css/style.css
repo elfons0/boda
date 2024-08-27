@@ -20,7 +20,7 @@ body {
 .love-font{
   font-family: josefsophia;
   font-size: min(10vw, 5.5em);
-  margin-top: 0;
+  margin-top: -10%;
 }
 
 .love-heading{
@@ -29,7 +29,7 @@ body {
   max-width: 900px;
   max-height: 900px;
 
-  background-image: url(../img/marco.jpg);
+  background-image: url(../img/marco-corazon.jpg);
   background-repeat: no-repeat;
   background-position:center;
   background-size: contain;
@@ -38,7 +38,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  margin-top: max(-20%, -275px);
+  margin-top: -50px;
 }
 
 .content__title{
@@ -145,6 +145,7 @@ mark {
 
 .form-elements label{
   width: 240px;
+  display: inline-block;
 }
 
 .form-elements p{
@@ -153,6 +154,13 @@ mark {
 
 .oculto{
   display: none;
+}
+
+@media screen and (max-width: 655px) {
+  .form-elements p{
+    text-align: center;
+    margin: 10px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -173,7 +181,7 @@ mark {
   }
 
   .form-elements p{
-    text-align: center;
     margin: 0;
   }
 }
+
