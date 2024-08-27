@@ -20,14 +20,14 @@
 <body class="loading">
   <main>
     <header class="content">
-      <div class="frame frame--header bg-novios">
-        <h1 class="frame__title">¡¡¡ Nos casamos !!!</h1>
-        <a class="frame__quick1" href="#ceremonia">La Ceremonia</a>
-        <a class="frame__quick1" href="#sitio">Cómo llegar</a>
-        <a class="frame__quick3" href="#alojamiento">Alojamiento</a>
-        <a class="frame__quick4" href="#lunamiel">La Luna de Miel</a>
-        <a class="frame__quick5" href="#asistencia">Acompáñanos</a>
-      </div>
+      <ul class="frame frame--header bg-novios">
+        <li><h1 class="frame__title">¡¡¡ Nos casamos !!!</h1></li>
+        <li><a class="frame__quick1" href="#ceremonia">La Ceremonia</a></li>
+        <li><a class="frame__quick1" href="#sitio">Cómo llegar</a></li>
+        <li><a class="frame__quick3" href="#alojamiento">Alojamiento</a></li>
+        <li><a class="frame__quick4" href="#lunamiel">La Luna de Miel</a></li>
+        <li><a class="frame__quick5" href="#asistencia">Acompáñanos</a></li>
+      </ul>
     </header>
     <div class="content">
       <div class="love-heading">
@@ -126,7 +126,7 @@
             <fieldset class="form-elements blue-border round-corner">
               <p>
                 <label for="Nombre">Nombre completo</label>
-                <input id="Nombre" name="Nombre" />
+                <input id="Nombre" name="Nombre" maxlength="255"/>
               </p>
               <p>
                 <label for="Compa">¿Llevas acompañante?</label>
@@ -137,7 +137,7 @@
               </p>
               <p id="ver-pareja" class="oculto">
                 <label for="Pareja">Dinos su nombre completo</label>
-                <input id="Pareja" name="Pareja" />
+                <input id="Pareja" name="Pareja" maxlength="255"/>
               </p>
               <p>
                 <label for="Alojamiento">¿Te quedas esa noche?</label>
@@ -167,7 +167,7 @@
               </p>
               <p>
                 <label for="Alergias">¿Alguna alergia o intolerancia?</label>
-                <input id="Alergias" name="Alergias" />
+                <input id="Alergias" name="Alergias" maxlength="255"/>
               </p>
             </fieldset>
               <button id="sendForm" class="blue-button">Enviar</button>
@@ -409,8 +409,10 @@
     </div>
 
     <footer class="frame--footer">
-        <span>¡¡Os esperamos!!</span>
-        <img class="" src="img/RO_Poring.webp" alt="" />
+          <img class="" src="img/RO_Poring.webp" alt="" />
+          <img class="" src="img/RO_Marin.webp" alt="" /> 
+          <img class="" src="img/RO_Poporing.webp" alt="" />
+          <img class="" src="img/RO_Drops.webp" alt="" />
     </footer>
   </main>
   <script src="js/gsap.min.js"></script>

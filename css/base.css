@@ -126,23 +126,21 @@ a:focus-visible {
 }
 
 .frame--header {
-  height: 100%;
-  z-index: 3000;
+  height: 200px;
+  padding-left: 15px;
   background-size: auto 80%;
   background-position: 120% 50%;
   background-repeat: no-repeat;
   grid-template-areas: "title" "quick1" "quick2" "quick3" "quick4" "quick5" "quick6";
 }
 
-.frame--footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.frame--footer{
+  padding: 5px;
+  text-align: center;
 }
 
-.frame--footer *{
-  padding: 5px;
-  text-align: end;
-  line-height: 3em;
+.frame--footer span {
+  margin-bottom: 5px;
 }
 
 .frame #cdawrap {
@@ -152,6 +150,10 @@ a:focus-visible {
 .frame a {
   pointer-events: auto;
   line-height: 24px;
+}
+
+.frame li {
+  list-style: none;
 }
 
 .frame__title {
