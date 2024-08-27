@@ -135,8 +135,14 @@ a:focus-visible {
 }
 
 .frame--footer {
-  grid-template-areas: "credits" "author";
-  align-content: end;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.frame--footer *{
+  padding: 5px;
+  text-align: end;
+  line-height: 3em;
 }
 
 .frame #cdawrap {
