@@ -18,7 +18,7 @@ sendForm.addEventListener("click", (e) => {
     .then((data) => {
       reset();
       msg.innerHTML = data.msg;
-      sendForm.classList.add("oculto");
+      myForm.classList.add("oculto");
       enviado.classList.remove("oculto");
     })
     .catch((err) => console.error(err));
@@ -27,7 +27,7 @@ sendForm.addEventListener("click", (e) => {
 volver.addEventListener("click", (e) => {
     e.preventDefault();
     enviado.classList.add("oculto");
-    sendForm.classList.remove("oculto");
+    myForm.classList.remove("oculto");
 });
 
 const nombre = document.querySelector("#Nombre");
