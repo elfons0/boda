@@ -49,6 +49,11 @@ body {
   text-align: center;
 }
 
+.content__timer *{
+  padding: 20px;
+}
+
+
 .content--intro p{
   font-family:  Peristiwa;
   text-align: center;
@@ -92,6 +97,37 @@ mark {
 
 .icon{
     width: 10vw;
+}
+
+.icon_time{
+  padding-right: 75px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 45px;
+}
+
+.icon_wedding{
+  background-image: url(../img/icon_rings.png);
+}
+
+.icon_coctail{
+  background-image: url(../img/icon_brindis.png);
+}
+
+.icon_lunch{
+  background-image: url(../img/icon_cubiertos.png);
+}
+
+.icon_drink{
+  background-image: url(../img/icon_mojito.png);
+}
+
+.icon_food{
+  background-image: url(../img/icon_camarero.png);
+}
+
+.icon_end{
+  background-image: url(../img/icon_party.png);
 }
 
 .left-mini-list{

@@ -400,7 +400,9 @@ i {
 .bg-5 {
   background-image: url(../img/banquete.jpg);
 }
-
+.bg-6 {
+  background-image: url(../img/tarta.jpg);
+}
 
 
 @media screen and (max-width: 600px) {

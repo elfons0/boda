@@ -1,0 +1,95 @@
+
+body {
+    background: rgb(204,204,204); 
+  }
+  page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  }
+  page[size="A4"] {  
+    width: 21cm;
+    height: 29.7cm; 
+  }
+  page[size="A4"][layout="landscape"] {
+    width: 29.7cm;
+    height: 21cm;  
+  }
+
+  .content{
+    padding: 0.5cm;
+    color: #945D60;
+  }
+ 
+  .menu-heading{
+    background-image: url(../img/marco-corazon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10.25cm;
+  }
+
+  .menu-footer{
+    background-image: url(../img/menu-parador.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: contain;
+    align-items: center;
+    height: 6.3cm;
+    padding-top: 0.2cm;
+  }
+
+  .menu-footer img{
+    height: 1cm;
+    vertical-align: top;
+  }
+
+  .menu{
+    height: 28.5cm;
+    border: 0.1cm solid #C39598;
+    margin-right: 4.5cm;
+    margin-left: 4.5cm;
+    text-align: center;
+  }
+
+  .menu-content{
+    padding: 0 1cm;
+  }
+
+  .menu p{
+    font-family: Peristiwa;
+    color:#023d72;
+    font-size: 0.75cm;
+    margin-bottom: 0.1cm;
+    margin-top: 0.3cm;
+  }
+
+  .menu-font{
+    font-family: josefsophia;
+    font-size: 1.45cm;
+    margin-top: -7%;
+    color:#023d72;
+    margin-bottom: 0.1cm;
+  }
+
+  .menu-day{
+    margin: 0;
+    font-family: Peristiwa;
+    font-weight: normal;
+    color: #C39598;
+    font-size: 0.55cm;
+  }
+  
+  @media print {
+    body, page {
+      background: white;
+      margin: 0;
+      box-shadow: 0;
+    }
+  }
