@@ -18,6 +18,15 @@ body {
     height: 21cm;  
   }
 
+  page[size="A5"] {
+    width: 14.8cm;
+    height: 21cm;
+  }
+  page[size="A5"][layout="landscape"] {
+    width: 21cm;
+    height: 14.8cm;  
+  }
+
   .content{
     padding: 0.5cm;
     color: #945D60;
@@ -32,17 +41,23 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 10.25cm;
+    height: 9.65cm;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 1px;
   }
 
   .menu-footer{
-    background-image: url(../img/menu-parador.png);
+    background-image: url(../img/menu-parador-foot.png);
     background-repeat: no-repeat;
     background-position: center left;
     background-size: contain;
     align-items: center;
-    height: 6.3cm;
-    padding-top: 0.2cm;
+    height: 6cm;
+    padding-top: 0.5cm;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: -1px;
   }
 
   .menu-footer img{
@@ -70,9 +85,14 @@ body {
     margin-top: 0.3cm;
   }
 
+  .menu span{
+    display: block;
+    margin: 0.1cm;
+  }
+
   .menu-font{
     font-family: josefsophia;
-    font-size: 1.45cm;
+    font-size: 1.37cm;
     margin-top: -7%;
     color:#023d72;
     margin-bottom: 0.1cm;
@@ -83,7 +103,7 @@ body {
     font-family: Peristiwa;
     font-weight: normal;
     color: #C39598;
-    font-size: 0.55cm;
+    font-size: 0.5cm;
   }
   
   @media print {
