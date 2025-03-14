@@ -401,7 +401,8 @@ i {
   background-image: url(../img/banquete.jpg);
 }
 .bg-6 {
-  background-image: url(../img/tarta.jpg);
+  background-image: url(../img/salon.webp);
+  background-position: bottom;
 }
 
 
