@@ -10,6 +10,9 @@ const msg = document.querySelector("#msg");
 sendForm.addEventListener("click", (e) => {
   e.preventDefault();
 
+  myForm.classList.add("oculto");
+  enviando.classList.remove("oculto");
+
   fetch(gscript, {
     method: "POST",
     body: new FormData(myForm),
@@ -18,7 +21,6 @@ sendForm.addEventListener("click", (e) => {
     .then((data) => {
       reset();
       msg.innerHTML = data.msg;
-      myForm.classList.add("oculto");
       enviado.classList.remove("oculto");
     })
     .catch((err) => console.error(err));
@@ -26,6 +28,7 @@ sendForm.addEventListener("click", (e) => {
 
 volver.addEventListener("click", (e) => {
     e.preventDefault();
+    enviando.classList.add("oculto");
     enviado.classList.add("oculto");
     myForm.classList.remove("oculto");
 });
