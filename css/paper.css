@@ -105,95 +105,6 @@ page[size="A5"][layout="landscape"] {
   font-size: 0.5cm;
 }
 
-.landscape {
-  .save-content {
-    display: flex;
-  }
-
-  .save-main {
-    width: 50%;
-    float: left;
-  }
-
-  .save-side {
-    width: 50%;
-    float: right;
-    height: 9.78cm;
-    font-family: Peristiwa;
-    color: #023d72;
-  }
-
-  .save-header {
-    background-repeat: no-repeat;
-    background-size: auto 80%;
-    height: 50%;
-    margin: 0 10%;
-  }
-
-  .save-heading {
-    background-image: url(../img/marco-corazon.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 9.18cm;
-  }
-
-  .save-font {
-    font-family: josefsophia;
-    font-size: 1.25cm;
-    margin-top: -7%;
-    margin-bottom: 1.1cm;
-    color: #023d72;
-  }
-
-  .save-text {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    margin-right: 10%;
-    margin-left: -10%;
-  }
-
-  .save-text h1 {
-    font-size: 2.8em;
-    font-weight: normal;
-  }
-
-  .save-text h2 {
-    font-size: 2.3em;
-    font-weight: normal;
-  }
-
-  .save-text p {
-    font-size: 1.5em;
-    font-weight: normal;
-    margin-bottom: 0;
-  }
-
-  .save-day {
-    color: #023d72;
-  }
-
-  .save-footer {
-    width: 18cm;
-    height: 5.5cm;
-
-    background-color: #c39598;
-    background-image: url(../img/roque-linea2.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    background-blend-mode: screen;
-    margin-top: -2cm;
-    margin-left: 1.5cm;
-    margin-right: 1.5cm;
-  }
-}
-
 .portrait {
   .save-content {
     display: flex;
@@ -229,7 +140,7 @@ page[size="A5"][layout="landscape"] {
 
   .save-font {
     font-family: josefsophia;
-    font-size: 1.38cm;
+    font-size: 1.30cm;
     margin-top: -6%;
     margin-bottom: 1.1cm;
     color: #023d72;
@@ -278,6 +189,66 @@ page[size="A5"][layout="landscape"] {
     margin-left: 1.5cm;
     margin-right: 1.5cm;
   }
+
+  .seating-heading {
+    font-family: Peristiwa;
+    background-image: url(../img/marco-corazon.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 4cm;
+    margin-left: 2cm;
+    margin-right: 3cm;
+    font-size: 1.5em;
+  }
+
+  .seating-number{
+    font-size: 1.5em;
+    margin-left: -1.8cm;
+  }
+
+  .seating-side {
+    margin-top: -0.7cm;
+    height: 15cm;
+    color: #023d72;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .seating-list{
+    font-family: josefsophia;
+    text-align: center;
+    padding: 0;
+    font-size: 0.9cm;
+  }
+
+  .seating-list li{
+    list-style-type: none;
+    line-height: 3rem;
+  }
+
+  .seating-footer {
+    width: 11.8cm;
+    height: 3cm;
+
+    background-color: #c39598;
+    background-image: url(../img/roque-linea2.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+    background-blend-mode: screen;
+    margin-top: -1.4cm;
+    margin-left: 1.5cm;
+    margin-right: 1.5cm;
+  }
+
 }
 
 @media print {
