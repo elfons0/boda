@@ -6,7 +6,6 @@ page {
   display: block;
   margin: 0 auto;
   margin-bottom: 0.5cm;
-  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
 }
 page[size="A4"] {
   width: 21cm;
@@ -298,14 +297,23 @@ page[size="A5"][layout="landscape"] {
 
     position: relative;
     top: 1cm;
-    width: 10cm;
-    height: 10cm;
+    width: 9cm;
+    height: 9cm;
     margin-top: -1cm;
     margin-bottom: 1.5cm;
+    margin-left: 0.5cm;
+    margin-right: 0.5cm;
   }
 
   .love-font{
-    font-size: 2.5em;
+    font-size: 2.2em;
+  }
+
+  .confetti{
+    background-image: url(../img/confetti.png);
+    background-repeat: repeat-y;
+    background-size: 70%;
+    background-position: center;
   }
 
   .novio{
@@ -334,6 +342,8 @@ page[size="A5"][layout="landscape"] {
   .text-centered{
     text-align: center;
     padding: 0 0.3cm;
+
+    font-size: 0.8em;
   }
 
   .front {
@@ -348,6 +358,26 @@ page[size="A5"][layout="landscape"] {
 
   .digit {
     opacity: 1;
+  }
+
+  .paper-footer {
+    width: 10cm;
+    height: 3cm;
+
+    background-color: #c39598;
+    background-image: url(../img/roque-linea2.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+    background-blend-mode: screen;
+    margin-top: -0.1cm;
+  }
+
+  .poring-footer {
+    background-image: url(../img/RO_Poring.webp), url(../img/RO_Marin.webp), url(../img/RO_Poporing.webp), url(../img/RO_Drops.webp);
+    height: 14cm;
+    background-repeat: no-repeat;
+    background-position: 20% bottom, 40% bottom, 60% bottom, 80% bottom;
   }
 }
 
