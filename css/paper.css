@@ -139,7 +139,7 @@ page[size="A5"][layout="landscape"] {
 
   .save-font {
     font-family: josefsophia;
-    font-size: 1.30cm;
+    font-size: 1.3cm;
     margin-top: -6%;
     margin-bottom: 1.1cm;
     color: #023d72;
@@ -162,7 +162,7 @@ page[size="A5"][layout="landscape"] {
   .save-text h3 {
     font-weight: normal;
     margin-top: 0;
-    font-family: 'Peristiwa';
+    font-family: "Peristiwa";
     font-size: 1.7em;
   }
 
@@ -205,7 +205,7 @@ page[size="A5"][layout="landscape"] {
     font-size: 1.5em;
   }
 
-  .seating-number{
+  .seating-number {
     font-size: 1.5em;
     margin-left: -1.8cm;
   }
@@ -221,20 +221,20 @@ page[size="A5"][layout="landscape"] {
     align-items: center;
   }
 
-  .seating-icons{
+  .seating-icons {
     height: 110px;
     width: 110px;
     background-repeat: no-repeat;
   }
 
-  .seating-list{
+  .seating-list {
     font-family: josefsophia;
     text-align: center;
     padding: 0;
     font-size: 0.9cm;
   }
 
-  .seating-list li{
+  .seating-list li {
     list-style-type: none;
     line-height: 3rem;
   }
@@ -253,23 +253,21 @@ page[size="A5"][layout="landscape"] {
     margin-left: 1.5cm;
     margin-right: 1.5cm;
   }
-
 }
 
 .four-column {
-
   .column-container {
     display: flex;
     flex-wrap: wrap;
     height: 14.8cm;
-    
+
     color: #023d72;
     font-family: Peristiwa;
     font-weight: normal;
-      padding: 0 0.5cm;
+    padding: 0 0.5cm;
   }
 
-  .flex-column{
+  .flex-column {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -284,13 +282,17 @@ page[size="A5"][layout="landscape"] {
     flex: 2;
   }
 
-  .double-border{
+  .double-border {
     border-left: 1px solid lightgray;
     border-right: 1px solid lightgray;
   }
 
-  .love{
-    background-image: url(../img/marco-corazon.jpg);
+  .single-border {
+    border-left: 1px solid lightgray;
+  }
+
+  .love {
+    background-image: url(../img/corazon.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -305,18 +307,66 @@ page[size="A5"][layout="landscape"] {
     margin-right: 0.5cm;
   }
 
-  .love-font{
+  .love-font {
     font-size: 2.2em;
   }
 
-  .confetti{
+  .confetti {
     background-image: url(../img/confetti.png);
     background-repeat: repeat-y;
-    background-size: 70%;
     background-position: center;
+    background-size: 100%;
   }
 
-  .novio{
+  .fondo-delicado {
+    background-image: url(../img/detalles-delicados.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+
+    background-blend-mode: screen;
+  }
+
+  .top-margin {
+    margin-top: 2.5cm;
+  }
+
+  .paper-novios {
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 1cm;
+    height: 6cm;
+    margin-right: 25%;
+  }
+
+  .roque-mid {
+    width: 9.5cm;
+    height: 3cm;
+
+    margin-left: 0.5cm;
+    margin-top: 0.5cm;
+
+    background-color: #c39598;
+    background-image: url(../img/roque-linea2.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+    background-blend-mode: screen;
+  }
+
+  .sobre-papel {
+    background-image: url(../img/sobre-papel.jpg);
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position: center right;
+
+    background-blend-mode: screen;
+    margin-left: -0.5cm;
+    padding-right: 0.5cm;
+  }
+
+  .novio {
     background-image: url(../img/ro-novio.gif);
     background-repeat: no-repeat;
     background-position: center;
@@ -327,7 +377,7 @@ page[size="A5"][layout="landscape"] {
     height: 6cm;
   }
 
-  .novia{
+  .novia {
     background-image: url(../img/ro-novia.gif);
     background-repeat: no-repeat;
     background-position: center;
@@ -339,7 +389,7 @@ page[size="A5"][layout="landscape"] {
     height: 6cm;
   }
 
-  .text-centered{
+  .text-centered {
     text-align: center;
     padding: 0 0.3cm;
 
@@ -354,6 +404,10 @@ page[size="A5"][layout="landscape"] {
     top: 3.5cm;
     transform: translateX(-50%);
     text-align: center;
+  }
+
+  .front-footer {
+    top: 1.5cm;
   }
 
   .digit {
@@ -374,10 +428,199 @@ page[size="A5"][layout="landscape"] {
   }
 
   .poring-footer {
-    background-image: url(../img/RO_Poring.webp), url(../img/RO_Marin.webp), url(../img/RO_Poporing.webp), url(../img/RO_Drops.webp);
+    background-image: url(../img/RO_Poring.webp), url(../img/RO_Marin.webp),
+      url(../img/RO_Poporing.webp), url(../img/RO_Drops.webp);
     height: 14cm;
     background-repeat: no-repeat;
     background-position: 20% bottom, 40% bottom, 60% bottom, 80% bottom;
+  }
+}
+
+.two-rows {
+  .h21 {
+    height: 21cm;
+  }
+
+  .row-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    color: #023d72;
+    font-family: Peristiwa;
+    font-weight: normal;
+  }
+
+  .column-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .fondo-delicado {
+    background-image: url(../img/detalles-delicados.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .flex-row {
+    flex: 1;
+    height: 10.5cm;
+  }
+
+  .flex-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .single-border {
+    border-bottom: 1px solid lightgray;
+  }
+
+  .love {
+    background-image: url(../img/corazon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    position: relative;
+    top: 1cm;
+    width: 8cm;
+    height: 8cm;
+    margin-top: -1cm;
+    margin-bottom: 1.5cm;
+    margin-left: 0.5cm;
+    margin-right: 0.5cm;
+  }
+
+  .love-side {
+    width: 8.5cm;
+    height: 8.5cm;
+    margin: 0;
+  }
+
+  .flex2 {
+    flex: 2;
+  }
+  
+  .flex4 {
+    flex: 4;
+  }
+
+  .love-font {
+    font-size: 2em;
+  }
+
+  .text-side {
+    text-align: center;
+    width: 100%;
+    margin-top: -2cm;
+
+    h1 {
+      font-size: 1.8em;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      font-weight: normal;
+      margin: 0;
+    }
+  }
+
+  .padding-05 {
+    padding: 0 0.5cm;
+  }
+
+  .sobre-papel {
+    background-image: url(../img/sobre-papel.jpg);
+    background-repeat: no-repeat;
+    background-size: 145%;
+    background-position: center bottom;
+  }
+
+  .paper-novios {
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 6cm;
+    width: 4.8cm;
+    top: 3.5cm;
+  }
+
+  .right-novios {
+    top: 1.6cm;
+    width: 6cm;
+    margin-left: -1cm;
+  }
+
+  .reverse {
+    color: #DFDBD2;
+    font-size: 1.8em;
+    font-weight: normal;
+    width: 100%;
+    text-align: center;
+
+    transform: rotate(180deg);
+  }
+
+  .roque-mid {
+    width: 8.5cm;
+    height: 3cm;
+
+    margin-left: 1cm;
+    margin-bottom: 0cm;
+
+    background-color: #c39598;
+    background-image: url(../img/roque-linea2.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+    background-blend-mode: screen;
+  }
+
+  .roque-full{
+    width: 12.8cm;
+    height: 3.5cm;
+
+    margin-right: 1cm;
+    margin-top: 5cm;
+    margin-bottom: 1cm;
+  }
+
+  .brown{
+    color: #c39598;
+    margin-left: 6.3cm;
+    margin-top: -1.5cm;
+    font-size: 1.6em;
+    font-weight: normal;
+  }
+
+  .front {
+    font-family: "Major Mono Display", monospace;
+    font-size: 7pt;
+    position: relative;
+    left: 50%;
+    top: 3.5cm;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .front-footer {
+    top: 1.5cm;
+  }
+
+  .front-side {
+    top: 4cm;
+    font-size: 5pt;
+  }
+
+  .digit {
+    opacity: 1;
   }
 }
 
